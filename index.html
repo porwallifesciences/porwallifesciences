@@ -7,7 +7,6 @@
 <meta name="description" content="Porwal Life Sciences is an India-based B2B merchant exporter of herbal extracts, botanical extracts and natural herbal powders for international markets.">
 <link rel="canonical" href="https://porwallifesciences.com/">
 <meta name="robots" content="index, follow">
-<link rel="icon" type="image/png" href="data:image/png;base64,PASTE_YOUR_LOGO_BASE64_HERE">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -643,6 +642,16 @@ form.addEventListener("submit",async function(e){
     else{btn.textContent="Send Inquiry →";btn.disabled=false;alert("Something went wrong. Please email us directly.")}
   }catch(err){btn.textContent="Send Inquiry →";btn.disabled=false;alert("Connection error. Please try again.")}
 });
+</script>
+<script>
+const logo = document.querySelector('.nav-logo img');
+if (logo) {
+  const favicon = document.createElement('link');
+  favicon.rel = 'icon';
+  favicon.type = 'image/png';
+  favicon.href = logo.src;
+  document.head.appendChild(favicon);
+}
 </script>
 </body>
 </html>
