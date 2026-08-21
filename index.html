@@ -121,42 +121,136 @@ section{padding:96px 6%}
 .sec-title{font-family:"Playfair Display",serif;font-size:clamp(1.9rem,3vw,2.6rem);font-weight:700;color:var(--forest);line-height:1.18;margin-bottom:18px}
 .sec-sub{font-size:0.96rem;color:var(--text-light);max-width:540px;line-height:1.85}
 
-<!-- ABOUT -->
-.about-wrap{display:flex;flex-direction:column;gap:0;margin-top:48px;max-width:800px}
-<section id="about">
-  <div class="about-wrap">
-    <div class="eyebrow" style="margin-bottom:14px">About Porwal Life Sciences</div>
-    <h2 class="sec-title">About Us</h2>
-    <div class="about-founder-block">
-      <div class="about-founder-info">
-        <p>Founded by</p>
-        <h4>Bhavya Porwal</h4>
-        <span>Merchant Exporter &middot; Indore, India</span>
-      </div>
-    </div>
-    <p>Porwal Life Sciences is a merchant export company based in Indore, India. We source standardized botanical extracts and certified organic herbal powders from carefully selected Indian manufacturers and supply them to international buyers with complete batch documentation.</p>
-    <p>We are not a manufacturer. Our role is to identify the right certified supplier for each product, ensure every batch is properly tested and documented, and manage the export process end-to-end — so our buyers receive exactly what they ordered, backed by every report they need.</p>
-    <p>We work with buyers who value quality over price alone — supplement brands, nutraceutical companies, private label businesses, and health product distributors in the UK, EU, and global markets who need a reliable, transparent Indian supply partner.</p>
-    <div class="about-pillars">
-      <div class="pillar">
-        <div class="pillar-title">Responsible Sourcing</div>
-        <div class="pillar-text">We work only with certified manufacturers selected on the basis of their quality systems, testing capabilities, and export compliance record.</div>
-      </div>
-      <div class="pillar">
-        <div class="pillar-title">Transparent Documentation</div>
-        <div class="pillar-text">Supplier credentials and batch test reports are shared openly — before orders are placed and with every shipment.</div>
-      </div>
-      <div class="pillar">
-        <div class="pillar-title">Export Coordination</div>
-        <div class="pillar-text">We handle sourcing, quality documentation, packaging, and shipping paperwork — end to end, for every order.</div>
-      </div>
-      <div class="pillar">
-        <div class="pillar-title">Long-Term Focus</div>
-        <div class="pillar-text">We are building a business on trust and repeat partnerships, not one-off transactions. Consistency matters to us as much as it does to our buyers.</div>
-      </div>
-    </div>
-  </div>
-</section>
+/* ── ABOUT ── */
+#about{
+  background:var(--off-white)
+}
+
+.about-wrap{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:start;
+  margin-top:64px
+}
+
+.about-text-col p{
+  font-size:0.95rem;
+  color:var(--text-mid);
+  line-height:1.88;
+  margin-bottom:18px
+}
+
+/* ── FOUNDER CARD ── */
+.about-founder-block{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  background:var(--forest);
+  padding:18px 24px;
+  border-radius:4px;
+  margin-bottom:32px;
+  max-width:390px
+}
+
+.about-founder-info p{
+  font-size:0.64rem;
+  font-weight:600;
+  color:var(--sage-light);
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  margin-bottom:3px
+}
+
+.about-founder-info h4{
+  font-family:"Playfair Display",serif;
+  font-size:1.08rem;
+  font-weight:600;
+  color:var(--white);
+  margin-bottom:3px
+}
+
+.about-founder-info span{
+  font-size:0.74rem;
+  color:rgba(255,255,255,0.62)
+}
+
+/* ── STATS ── */
+.about-stats-row{
+  display:flex;
+  gap:0;
+  border:1px solid var(--border);
+  border-radius:4px;
+  overflow:hidden;
+  margin-bottom:32px
+}
+
+.about-stat{
+  flex:1;
+  padding:20px 16px;
+  text-align:center;
+  border-right:1px solid var(--border)
+}
+
+.about-stat:last-child{
+  border-right:none
+}
+
+.about-stat-n{
+  font-family:"Playfair Display",serif;
+  font-size:1.6rem;
+  font-weight:700;
+  color:var(--forest);
+  line-height:1
+}
+
+.about-stat-l{
+  font-size:0.64rem;
+  color:var(--text-light);
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  margin-top:5px
+}
+
+/* ── PILLARS ── */
+.about-pillars{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  margin-top:36px
+}
+
+.pillar{
+  background:var(--warm-white);
+  border:1px solid var(--border);
+  border-radius:4px;
+  padding:20px;
+  transition:all 0.22s
+}
+
+.pillar:hover{
+  border-color:var(--sage);
+  box-shadow:0 4px 16px var(--shadow-sm)
+}
+
+.pillar-icon{
+  font-size:1.3rem;
+  margin-bottom:8px
+}
+
+.pillar-title{
+  font-size:0.80rem;
+  font-weight:700;
+  color:var(--forest);
+  margin-bottom:3px;
+  letter-spacing:0.02em
+}
+
+.pillar-text{
+  font-size:0.74rem;
+  color:var(--text-light);
+  line-height:1.55
+}
 
 /* ── PRODUCTS ── */
 #products{background:var(--warm-white)}
