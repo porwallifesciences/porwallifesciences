@@ -121,15 +121,99 @@ section{padding:96px 6%}
 .sec-title{font-family:"Playfair Display",serif;font-size:clamp(1.9rem,3vw,2.6rem);font-weight:700;color:var(--forest);line-height:1.18;margin-bottom:18px}
 .sec-sub{font-size:0.96rem;color:var(--text-light);max-width:540px;line-height:1.85}
 
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="about-wrap">
+
+    <!-- LEFT COLUMN -->
+    <div class="about-text-col">
+
+      <p>
+        Porwal Life Sciences is a B2B merchant exporter and supplier of
+        botanical ingredients, herbal powders, and standardized botanical
+        extracts from India.
+      </p>
+
+      <p>
+        We work with international buyers seeking responsibly sourced
+        botanical ingredients with clear product information and
+        documentation.
+      </p>
+
+      <!-- FOUNDER -->
+      <div class="about-founder-block">
+        <div class="about-founder-info">
+          <p>Founder</p>
+          <h4>Bhavya Porwal</h4>
+          <span>Founder &amp; Proprietor · Merchant Exporter · Indore, India</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div>
+
+      <p class="about-text-col">
+        Our approach is focused on responsible sourcing, transparent
+        documentation, export compliance, and building reliable
+        long-term business relationships.
+      </p>
+
+      <div class="about-pillars">
+
+        <div class="pillar">
+          <div class="pillar-icon">◈</div>
+          <div class="pillar-title">Responsible Sourcing</div>
+          <div class="pillar-text">
+            Sourcing botanical ingredients with attention to product
+            specifications and supplier documentation.
+          </div>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-icon">▣</div>
+          <div class="pillar-title">Transparent Documentation</div>
+          <div class="pillar-text">
+            Clear product information and relevant documentation for
+            buyer evaluation.
+          </div>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-icon">✓</div>
+          <div class="pillar-title">Export Compliance</div>
+          <div class="pillar-text">
+            A structured approach to export documentation and applicable
+            market requirements.
+          </div>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-icon">↗</div>
+          <div class="pillar-title">Long-Term Partnerships</div>
+          <div class="pillar-text">
+            Building professional relationships with buyers and
+            suppliers for consistent business.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<style>
 /* ── ABOUT ── */
-#about{
-  background:var(--off-white)
-}
+#about{background:var(--off-white)}
 
 .about-wrap{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:60px;
+  gap:80px;
   align-items:start;
   margin-top:64px
 }
@@ -141,20 +225,18 @@ section{padding:96px 6%}
   margin-bottom:18px
 }
 
-/* ── FOUNDER CARD ── */
 .about-founder-block{
   display:flex;
   align-items:center;
   gap:16px;
   background:var(--forest);
-  padding:18px 24px;
+  padding:22px 28px;
   border-radius:4px;
-  margin-bottom:32px;
-  max-width:390px
+  margin-bottom:32px
 }
 
 .about-founder-info p{
-  font-size:0.64rem;
+  font-size:0.68rem;
   font-weight:600;
   color:var(--sage-light);
   letter-spacing:0.14em;
@@ -164,55 +246,17 @@ section{padding:96px 6%}
 
 .about-founder-info h4{
   font-family:"Playfair Display",serif;
-  font-size:1.08rem;
+  font-size:1.10rem;
   font-weight:600;
   color:var(--white);
-  margin-bottom:3px
+  margin-bottom:2px
 }
 
 .about-founder-info span{
   font-size:0.74rem;
-  color:rgba(255,255,255,0.62)
+  color:rgba(255,255,255,0.50)
 }
 
-/* ── STATS ── */
-.about-stats-row{
-  display:flex;
-  gap:0;
-  border:1px solid var(--border);
-  border-radius:4px;
-  overflow:hidden;
-  margin-bottom:32px
-}
-
-.about-stat{
-  flex:1;
-  padding:20px 16px;
-  text-align:center;
-  border-right:1px solid var(--border)
-}
-
-.about-stat:last-child{
-  border-right:none
-}
-
-.about-stat-n{
-  font-family:"Playfair Display",serif;
-  font-size:1.6rem;
-  font-weight:700;
-  color:var(--forest);
-  line-height:1
-}
-
-.about-stat-l{
-  font-size:0.64rem;
-  color:var(--text-light);
-  letter-spacing:0.08em;
-  text-transform:uppercase;
-  margin-top:5px
-}
-
-/* ── PILLARS ── */
 .about-pillars{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -251,6 +295,7 @@ section{padding:96px 6%}
   color:var(--text-light);
   line-height:1.55
 }
+</style>
 
 /* ── PRODUCTS ── */
 #products{background:var(--warm-white)}
